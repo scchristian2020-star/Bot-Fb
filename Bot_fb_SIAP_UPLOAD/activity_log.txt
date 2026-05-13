@@ -1,0 +1,6 @@
+2026-05-13 23:04:47 | INFO     | main | 🚀 AI Business Agent starting up...
+2026-05-13 23:04:47 | INFO     | database.db_manager | ✅ Database diinisialisasi.
+2026-05-13 23:04:47 | INFO     | activity | [APP_STARTED] Port: 8000 | Debug: False
+2026-05-13 23:04:47 | WARNING  | main | ⚠️  PERLU DIISI di .env: FB_PAGE_ACCESS_TOKEN, FB_VERIFY_TOKEN, FB_APP_SECRET, FB_PAGE_ID
+2026-05-13 23:04:47 | WARNING  | main | ⚠️  Bot akan berjalan tapi TIDAK BISA menerima webhook dari Meta!
+2026-05-13 23:04:47 | WARNING  | main | ⚠️  GEMINI_API_KEY belum diisi di .env — AI tidak akan berfungsi!
