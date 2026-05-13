@@ -31,7 +31,8 @@ load_dotenv()
 logger = logging.getLogger(__name__)
 
 ADMIN_FB_PSID = os.getenv("ADMIN_FB_PSID", "")
-LOG_PATH = Path(__file__).parent.parent / os.getenv("LOG_FILE", "activity_log.txt")
+_log_base = Path("/tmp") if os.path.exists("/tmp") else Path(__file__).parent.parent
+LOG_PATH = _log_base / os.getenv("LOG_FILE", "activity_log.txt")
 KNOWLEDGE_PATH = Path(__file__).parent.parent / "produk_knowledge.json"
 
 # Set PSID yang diblokir (in-memory, reset saat restart)

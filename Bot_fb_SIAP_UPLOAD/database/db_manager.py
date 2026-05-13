@@ -10,8 +10,9 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional, List, Dict
 
-# Pastikan folder database ada
-DB_PATH = Path(__file__).parent / "customers.db"
+# Railway pakai /tmp untuk file sementara (filesystem read-only)
+_db_base = Path("/tmp") if Path("/tmp").exists() else Path(__file__).parent
+DB_PATH = _db_base / "customers.db"
 
 logger = logging.getLogger(__name__)
 

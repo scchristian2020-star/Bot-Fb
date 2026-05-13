@@ -13,7 +13,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 LOG_FILE = os.getenv("LOG_FILE", "activity_log.txt")
-LOG_PATH = Path(__file__).parent.parent / LOG_FILE
+# Railway pakai /tmp untuk file sementara (filesystem read-only)
+_base = Path("/tmp") if os.path.exists("/tmp") else Path(__file__).parent.parent
+LOG_PATH = _base / LOG_FILE
 
 # ──────────────────────────────────────────────
 #  Setup logging ke file + console
@@ -24,16 +26,17 @@ def setup_logging():
     log_format = "%(asctime)s | %(levelname)-8s | %(name)s | %(message)s"
     date_format = "%Y-%m-%d %H:%M:%S"
 
+    handlers = [logging.StreamHandler()]
+    try:
+        handlers.append(logging.FileHandler(LOG_PATH, encoding="utf-8"))
+    except Exception:
+        pass  # Tidak bisa tulis file log (filesystem read-only di Railway)
+
     logging.basicConfig(
         level=logging.INFO,
         format=log_format,
         datefmt=date_format,
-        handlers=[
-            # Handler ke file
-            logging.FileHandler(LOG_PATH, encoding="utf-8"),
-            # Handler ke console
-            logging.StreamHandler()
-        ]
+        handlers=handlers
     )
     logging.getLogger("httpx").setLevel(logging.WARNING)
     logging.getLogger("uvicorn.access").setLevel(logging.WARNING)
