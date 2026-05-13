@@ -1,0 +1,81 @@
+{
+  "_keterangan": "Edit file ini sesuai produk bisnis Anda. Bot akan membaca data ini sebagai konteks saat menjawab pelanggan.",
+  "brand": "Lazaro",
+  "tagline": "Mesin Las Berkualitas Tinggi untuk Profesional & Pemula",
+  "kontak_admin": {
+    "whatsapp": "6281234567890",
+    "jam_operasional": "Senin-Sabtu, 08.00-17.00 WIB"
+  },
+  "produk": [
+    {
+      "id": "P001",
+      "nama": "Lazaro MMA 120",
+      "kategori": "Mesin Las MMA",
+      "harga": "Rp 850.000",
+      "stok": "Tersedia",
+      "garansi": "1 Tahun",
+      "keunggulan": [
+        "Cocok untuk pemula, ringan & mudah dibawa",
+        "Daya listrik rendah, hemat energi",
+        "Output stabil 120A, hasil las rapi",
+        "Dilengkapi kabel las + elektroda gratis"
+      ],
+      "spesifikasi": {
+        "input_voltage": "220V AC",
+        "output_current": "20-120A",
+        "berat": "3.5 kg",
+        "dimensi": "28 x 12 x 20 cm"
+      }
+    },
+    {
+      "id": "P002",
+      "nama": "Lazaro MMA 160",
+      "kategori": "Mesin Las MMA",
+      "harga": "Rp 1.100.000",
+      "stok": "Tersedia",
+      "garansi": "1 Tahun",
+      "keunggulan": [
+        "Performa handal untuk penggunaan intensif",
+        "Cocok las besi, baja, stainless",
+        "Teknologi IGBT terbaru, lebih efisien",
+        "Anti-overload otomatis"
+      ],
+      "spesifikasi": {
+        "input_voltage": "220V AC",
+        "output_current": "20-160A",
+        "berat": "4.2 kg",
+        "dimensi": "32 x 13 x 22 cm"
+      }
+    },
+    {
+      "id": "P003",
+      "nama": "Lazaro MIG 160",
+      "kategori": "Mesin Las MIG",
+      "harga": "Rp 2.500.000",
+      "stok": "Indent (7-14 hari)",
+      "garansi": "1 Tahun",
+      "keunggulan": [
+        "Las tanpa asap berlebih, ramah lingkungan",
+        "Hasil las halus, minim percikan",
+        "Ideal untuk karoseri, body kendaraan",
+        "Dilengkapi torch gun & wire feeder"
+      ],
+      "spesifikasi": {
+        "input_voltage": "220V AC",
+        "output_current": "30-160A",
+        "berat": "8.5 kg",
+        "dimensi": "42 x 20 x 35 cm"
+      }
+    }
+  ],
+  "promo_aktif": {
+    "judul": "Promo Mei 2026",
+    "deskripsi": "Beli 2 unit MMA, gratis 1 box elektroda senilai Rp 150.000!",
+    "berlaku_hingga": "31 Mei 2026"
+  },
+  "kebijakan": {
+    "pengiriman": "Pengiriman ke seluruh Indonesia via JNE/J&T/SiCepat. Ongkos kirim ditanggung pembeli.",
+    "retur": "Retur diterima dalam 7 hari jika ada cacat produksi.",
+    "pembayaran": "Transfer BCA / BRI / Mandiri, COD untuk area tertentu, Shopee/Tokopedia tersedia."
+  }
+}

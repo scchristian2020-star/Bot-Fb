@@ -1,0 +1,121 @@
+2026-05-13 18:45:46 | INFO     | main | 🚀 AI Business Agent starting up...
+2026-05-13 18:45:46 | INFO     | database.db_manager | ✅ Database diinisialisasi.
+2026-05-13 18:45:46 | INFO     | activity | [APP_STARTED] Port: 8000 | Debug: False
+2026-05-13 18:45:46 | INFO     | main | ✅ Semua konfigurasi Meta sudah lengkap.
+2026-05-13 18:45:46 | INFO     | main | ✅ LLM Provider: GEMINI siap.
+2026-05-13 18:46:19 | INFO     | main | 🔐 Webhook verification request | mode=subscribe | token=lazaro...
+2026-05-13 18:46:19 | WARNING  | main | ❌ Webhook verification FAILED — token tidak cocok!
+2026-05-13 18:49:31 | INFO     | main | 🚀 AI Business Agent starting up...
+2026-05-13 18:49:31 | INFO     | database.db_manager | ✅ Database diinisialisasi.
+2026-05-13 18:49:31 | INFO     | activity | [APP_STARTED] Port: 8000 | Debug: False
+2026-05-13 18:49:31 | WARNING  | main | ⚠️  PERLU DIISI di .env: FB_PAGE_ACCESS_TOKEN, FB_VERIFY_TOKEN, FB_APP_SECRET, FB_PAGE_ID
+2026-05-13 18:49:31 | WARNING  | main | ⚠️  Bot akan berjalan tapi TIDAK BISA menerima webhook dari Meta!
+2026-05-13 18:49:31 | WARNING  | main | ⚠️  GEMINI_API_KEY belum diisi di .env — AI tidak akan berfungsi!
+2026-05-13 18:49:31 | INFO     | main | 🛑 AI Business Agent shutting down...
+2026-05-13 18:49:31 | INFO     | activity | [APP_STOPPED] 
+2026-05-13 18:54:51 | INFO     | main | 🔐 Webhook verification request | mode=subscribe | token=buat_t...
+2026-05-13 18:54:51 | INFO     | main | ✅ Webhook verified successfully!
+2026-05-13 18:54:51 | INFO     | activity | [WEBHOOK_VERIFIED] 
+2026-05-13 18:54:53 | INFO     | logic.messenger_handler | 📨 DM masuk dari 12345678... : Halo, mau tanya-tanya dulu boleh?
+2026-05-13 18:54:53 | INFO     | activity | [MESSAGE_IN] | PSID=12345678... | IN="Halo, mau tanya-tanya dulu boleh?"
+2026-05-13 18:54:53 | INFO     | logic.ai_engine | 🎯 Intent terdeteksi: GREETING
+2026-05-13 18:54:53 | INFO     | activity | [INTENT_DETECTED] | PSID=12345678... | DETAIL=Intent: GREETING
+2026-05-13 18:54:58 | INFO     | logic.messenger_handler | 📨 DM masuk dari 12345678... : Mesin las kalian ada yang buat pemula tidak?
+2026-05-13 18:54:58 | INFO     | activity | [MESSAGE_IN] | PSID=12345678... | IN="Mesin las kalian ada yang buat pemula tidak?"
+2026-05-13 18:54:58 | INFO     | activity | [INTENT_DETECTED] | PSID=12345678... | DETAIL=Intent: GENERAL
+2026-05-13 18:55:02 | INFO     | logic.messenger_handler | 📨 DM masuk dari 98765432... : Berapa harga mesin las MMA 120? Saya mau beli
+2026-05-13 18:55:02 | INFO     | activity | [MESSAGE_IN] | PSID=98765432... | IN="Berapa harga mesin las MMA 120? Saya mau beli"
+2026-05-13 18:55:02 | INFO     | logic.ai_engine | 🎯 Intent terdeteksi: LEAD_BUY
+2026-05-13 18:55:02 | INFO     | activity | [INTENT_DETECTED] | PSID=98765432... | DETAIL=Intent: LEAD_BUY
+2026-05-13 18:55:06 | INFO     | logic.messenger_handler | 📨 DM masuk dari 98765432... : Nomor WA saya: 081234567890
+2026-05-13 18:55:06 | INFO     | activity | [MESSAGE_IN] | PSID=98765432... | IN="Nomor WA saya: 081234567890"
+2026-05-13 18:55:06 | INFO     | activity | [INTENT_DETECTED] | PSID=98765432... | DETAIL=Intent: GENERAL
+2026-05-13 18:55:10 | INFO     | logic.messenger_handler | 📨 DM masuk dari 11112222... : Ini penipu! Barang tidak sesuai! Saya mau komplain
+2026-05-13 18:55:10 | INFO     | activity | [MESSAGE_IN] | PSID=11112222... | IN="Ini penipu! Barang tidak sesuai! Saya mau komplain!"
+2026-05-13 18:55:10 | INFO     | logic.ai_engine | 🎯 Intent terdeteksi: ANGRY
+2026-05-13 18:55:10 | INFO     | activity | [INTENT_DETECTED] | PSID=11112222... | DETAIL=Intent: ANGRY
+2026-05-13 18:55:14 | INFO     | logic.messenger_handler | 📨 DM masuk dari 11112222... : Hello ada yang bisa bantu?
+2026-05-13 18:55:14 | INFO     | activity | [MESSAGE_IN] | PSID=11112222... | IN="Hello ada yang bisa bantu?"
+2026-05-13 18:55:14 | INFO     | activity | [INTENT_DETECTED] | PSID=11112222... | DETAIL=Intent: GENERAL
+2026-05-13 18:55:17 | INFO     | logic.ai_engine | 🤖 Generating reply via GEMINI...
+2026-05-13 18:55:18 | ERROR    | logic.ai_engine | ❌ Gemini API error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2026-05-13 18:55:18 | INFO     | logic.messenger_handler | 📨 DM masuk dari 55556666... : Bisa minta admin manusia? Saya mau bicara langsung
+2026-05-13 18:55:18 | INFO     | activity | [MESSAGE_IN] | PSID=55556666... | IN="Bisa minta admin manusia? Saya mau bicara langsung."
+2026-05-13 18:55:18 | INFO     | logic.ai_engine | 🎯 Intent terdeteksi: HUMAN_REQUEST
+2026-05-13 18:55:18 | INFO     | activity | [INTENT_DETECTED] | PSID=55556666... | DETAIL=Intent: HUMAN_REQUEST
+2026-05-13 18:55:19 | ERROR    | logic.messenger_handler | ❌ Send message error 400: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"A2S33cAD5WL5KD9POOHslKn"}}
+2026-05-13 18:55:22 | INFO     | logic.human_handoff | 🚨 Human Handoff diaktifkan untuk PSID: 11112222... | Alasan: ANGRY
+2026-05-13 18:55:22 | INFO     | logic.comment_handler | 💬 Komentar dari 12345678... | Post: 0000000000000001_305928 | Teks: Wah keren! Berapa harga mesin las-nya? Mau beli ni
+2026-05-13 18:55:22 | INFO     | activity | [COMMENT_IN] | PSID=12345678... | IN="Wah keren! Berapa harga mesin las-nya? Mau beli nih!" | DETAIL=comment_id=337436_854496
+2026-05-13 18:55:22 | ERROR    | logic.human_handoff | ❌ FB send error: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"Af_7_qm6MoThlXSeUysa56l"}}
+2026-05-13 18:55:23 | ERROR    | logic.human_handoff | ❌ FB send error: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"ASdg6x5-ak_GCepKoEnjJjG"}}
+2026-05-13 18:55:23 | INFO     | logic.human_handoff | ✅ Notifikasi FB admin terkirim.
+2026-05-13 18:55:23 | INFO     | activity | [HANDOFF_ACTIVATED] | PSID=11112222... | DETAIL=Alasan: ANGRY | Nama: Pelanggan
+2026-05-13 18:55:25 | INFO     | logic.ai_engine | 🤖 Generating reply via GEMINI...
+2026-05-13 18:55:25 | ERROR    | logic.ai_engine | ❌ Gemini API error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2026-05-13 18:55:25 | ERROR    | logic.messenger_handler | ❌ Send message error 400: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"AL6Q4lbH0w2IIs5kLMLge9o"}}
+2026-05-13 18:55:26 | INFO     | logic.comment_handler | 💬 Komentar dari 12345678... | Post: 0000000000000001_577722 | Teks: Mantap produknya!
+2026-05-13 18:55:27 | INFO     | logic.ai_engine | 🤖 Generating reply via GEMINI...
+2026-05-13 18:55:27 | ERROR    | logic.ai_engine | ❌ Gemini API error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2026-05-13 18:55:28 | ERROR    | logic.messenger_handler | ❌ Send message error 400: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"AplOYU6OSVf-O4MeJun1BOD"}}
+2026-05-13 18:55:29 | ERROR    | logic.messenger_handler | ❌ Send message error 400: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"ACrnseFFffl8LK3CXRYa4N-"}}
+2026-05-13 18:55:29 | INFO     | activity | [LEAD_INITIATED] | PSID=98765432...
+2026-05-13 18:55:30 | INFO     | logic.human_handoff | 🚨 Human Handoff diaktifkan untuk PSID: 55556666... | Alasan: HUMAN_REQUEST
+2026-05-13 18:55:30 | ERROR    | logic.human_handoff | ❌ FB send error: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"AeW_7Hp69XAZZVdpqw945rc"}}
+2026-05-13 18:55:30 | INFO     | logic.messenger_handler | 📨 DM masuk dari 11112222... : #resume 1111222233334444
+2026-05-13 18:55:30 | INFO     | activity | [MESSAGE_IN] | PSID=11112222... | IN="#resume 1111222233334444"
+2026-05-13 18:55:31 | ERROR    | logic.human_handoff | ❌ FB send error: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"A79qbo7VRxr6N07ZE52HPVw"}}
+2026-05-13 18:55:31 | INFO     | logic.human_handoff | ✅ Notifikasi FB admin terkirim.
+2026-05-13 18:55:31 | INFO     | activity | [HANDOFF_ACTIVATED] | PSID=55556666... | DETAIL=Alasan: HUMAN_REQUEST | Nama: Pelanggan
+2026-05-13 18:55:32 | INFO     | logic.ai_engine | 🤖 Generating reply via GEMINI...
+2026-05-13 18:55:32 | ERROR    | logic.ai_engine | ❌ Gemini API error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2026-05-13 18:55:33 | ERROR    | logic.messenger_handler | ❌ Send message error 400: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"AjggYJLtIEuweLri943G4oY"}}
+2026-05-13 18:55:36 | INFO     | logic.ai_engine | 🤖 Generating reply via GEMINI...
+2026-05-13 18:55:36 | ERROR    | logic.ai_engine | ❌ Gemini API error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2026-05-13 18:55:36 | ERROR    | logic.messenger_handler | ❌ Send message error 400: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"APpPdiTuHYQL1n5hfsEqkp5"}}
+2026-05-13 18:55:37 | ERROR    | logic.human_handoff | ❌ FB send error: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"AQxf9zzQa7T_WT-6IsNMMjl"}}
+2026-05-13 18:55:37 | INFO     | activity | [HANDOFF_DEACTIVATED] | PSID=11112222... | DETAIL=Admin menonaktifkan handoff secara manual.
+2026-05-13 18:55:37 | INFO     | logic.human_handoff | ✅ Handoff dinonaktifkan untuk PSID: 11112222...
+2026-05-13 18:55:39 | ERROR    | logic.comment_handler | ❌ Gagal balas komentar 337436_854496: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"AI0YOHmw0eBH8D45UiGhYHm"}}
+2026-05-13 18:55:53 | ERROR    | logic.messenger_handler | ❌ Send message error 400: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"ADo7EBLVN03Ffy-4QEJoZ52"}}
+2026-05-13 18:55:53 | WARNING  | logic.comment_handler | ⚠️ Gagal kirim DM ke 12345678... (User mungkin belum pernah chat page ini)
