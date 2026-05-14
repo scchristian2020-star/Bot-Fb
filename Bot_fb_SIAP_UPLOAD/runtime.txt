@@ -1,1 +1,1 @@
-python-3.11
+# File ini tidak digunakan Railway. Lihat nixpacks.toml dan .python-version
